@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test;
 
 
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -20,10 +19,8 @@ public class ReguestTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("some data") );
+                .body("data", equalTo("some data"));
     }
-
-
 
 
 }
